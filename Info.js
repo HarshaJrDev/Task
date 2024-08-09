@@ -56,13 +56,16 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5F5F5', // Added background color for better visibility
+    marginTop:300
+   
   },
   centerContainer: {
     width: '80%',
+    justifyContent:"center",
+
     padding: 20,
+   
     borderRadius: 10,
-    backgroundColor: '#FFF', // Added background color for the input container
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -71,6 +74,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
+    alignItems: 'center', // Ensures content is centered horizontally
   },
   header: {
     fontSize: 24,
@@ -79,6 +83,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   inputContainer: {
+    width: '100%', // Ensure inputs take up full width of centerContainer
     marginBottom: 20,
   },
   input: {
@@ -88,7 +93,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 10,
     marginBottom: 10,
-    borderRadius: 5, // Added border radius for a rounded input look
+    borderRadius: 5,  // Light background color for inputs
   },
   submitButton: {
     width: '100%',
@@ -97,6 +102,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 5,
+    marginTop:100
   },
   submitButtonText: {
     color: '#fff',
