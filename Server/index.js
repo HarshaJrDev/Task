@@ -13,7 +13,7 @@ app.use(express.json());
 
 
 const Database = mysql.createConnection({
-    host: 'localhost',
+    host: '10.2.27.202',
     user: 'root',
     password: process.env.PASSWORD,  
     database: 'userinfo'  
@@ -59,5 +59,5 @@ app.post('/adduser', (req, res) => {
 
 
 app.listen(3000, () => {
-    console.log(`Server is running on http://localhost:3000`);
+    console.log(`Server is running on http://10.2.27.202:3000`);
 });

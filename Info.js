@@ -12,7 +12,7 @@ function Info() {
 
   const submit = async () => {
     try {
-      const response = await axios.post("http://127.0.0.1:3000/adduser", { name, age });
+      const response = await axios.post("http://10.2.27.202:3000/adduser", { name, age });
       console.log(response.data);
       Alert.alert("Success", "Data inserted successfully");
       navigation.navigate('Home', { name, age });
