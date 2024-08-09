@@ -30,7 +30,7 @@ Database.connect(error => {
 
 
 app.get('/UserData', (req, res) => {
-    Database.query('SELECT * FROM userDetails', (error, result) => {
+    Database.query('SELECT * FROM usersDetails', (error, result) => {
         if (error) {
             console.error('Database query error:', error);
             res.status(400).send('There was an error with the database query');
@@ -44,7 +44,7 @@ app.get('/UserData', (req, res) => {
 
 app.post('/adduser', (req, res) => {
     const {name, age } = req.body;
-    const query = 'INSERT INTO userDetails (name, age) VALUES (?,?)';
+    const query = 'INSERT INTO usersDetails (name, age) VALUES (?,?)';
 
     Database.query(query, [name, age], (error, result) => {
         if (error) {
