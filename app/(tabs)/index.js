@@ -1,14 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import Home from '../Home'
+import Info from '../../Info'
 
-const resetproject = () => {
+const index = () => {
   return (
     <View>
-      <Text>reset-project</Text>
+   <Info/>
     </View>
   )
 }
 
-export default resetproject
-
+export default index
 const styles = StyleSheet.create({})
